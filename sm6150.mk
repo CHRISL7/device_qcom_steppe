@@ -149,6 +149,10 @@ TARGET_DISABLE_QTI_VPP := true
 
 PRODUCT_PACKAGES += android.hardware.media.omx@1.0-impl
 
+PRODUCT_PACKAGES += init.qti.early_init.sh
+PRODUCT_PROPERTY_OVERRIDES += \
+     ro.soc.manufacturer=QTI
+
 # Audio configuration file
 -include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal/configs/msmsteppe/msmsteppe.mk
 
